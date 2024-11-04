@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Sum of Array Elements</title>
+</head>
+<body>
+    <script>
+        const numbers = [];
+        let sum = 0;
+
+        while (true) {
+            const input = prompt("Enter a number (or leave blank to finish):");
+            if (input === "") break;
+            numbers.push(Number(input));
+        }
+
+        sum = numbers.reduce((acc, num) => acc + num, 0);
+        alert("Sum of elements: " + sum);
+    </script>
+</body>
+</html>
